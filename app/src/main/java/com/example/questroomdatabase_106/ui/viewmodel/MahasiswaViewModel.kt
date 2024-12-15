@@ -2,6 +2,12 @@ package com.example.questroomdatabase_106.ui.viewmodel
 
 import com.example.questroomdatabase_106.data.entity.Mahasiswa
 
+data class MhsUIState(
+    val mahasiswaEvent: MahasiswaEvent = MahasiswaEvent(),
+    val isEntryValid: FormErrorState = FormErrorState(),
+    val snackBarMessage: String? = null,
+)
+
 data class FormErrorState(
     val nim: String? = null,
     val nama: String? = null,
