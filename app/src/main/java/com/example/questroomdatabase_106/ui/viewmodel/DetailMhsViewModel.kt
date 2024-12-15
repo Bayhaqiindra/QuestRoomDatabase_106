@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.questroomdatabase_106.data.entity.Mahasiswa
 import com.example.questroomdatabase_106.repository.RepositoryMhs
+import com.example.questroomdatabase_106.ui.navigation.DestinasiDetail
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
