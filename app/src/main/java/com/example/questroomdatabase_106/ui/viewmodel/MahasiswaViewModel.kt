@@ -2,6 +2,20 @@ package com.example.questroomdatabase_106.ui.viewmodel
 
 import com.example.questroomdatabase_106.data.entity.Mahasiswa
 
+data class FormErrorState(
+    val nim: String? = null,
+    val nama: String? = null,
+    val jenisKelamin: String? = null,
+    val alamat: String? = null,
+    val kelas: String? = null,
+    val angkatan: String? = null,
+){
+    fun isValid(): Boolean {
+        return nim == null && nama == null && jenisKelamin == null &&
+                alamat == null && kelas == null && angkatan == null
+    }
+}
+
 //menyimpan input form ke dalam entity
 fun MahasiswaEvent.toMahasiswaEntity(): Mahasiswa = Mahasiswa(
     nim = nim,
